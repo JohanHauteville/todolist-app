@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Jetter les poubelles",
+        "description": "Penser à jetter et à changer les poubelles !",
+        "isFinished": false,
+        "tag": "Urgent"
+    },
+    {
+        "title": "Finir le projet 13",
+        "description": "initialiser le projet avec create react app",
+        "isFinished": false,
+        "tag": "Modéré"
+    },
+    {
+        "title": "Finir les cours du projet 13",
+        "description": "Terminer les cours sur Redux du Projet 13",
+        "isFinished": true,
+        "tag": ""
+    }
+]

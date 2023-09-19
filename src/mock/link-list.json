@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Home",
+        "icon": "fa-solid fa-house",
+        "link": "/"
+    },
+    {
+        "title": "My tasks",
+        "icon": "fa-solid fa-list-check",
+        "link": "/"
+    },
+    {
+        "title": "Community",
+        "icon": "fa-regular fa-comments",
+        "link": "/"
+    }
+]

@@ -1,0 +1,50 @@
+.side-bar {
+    width: 15%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.078);
+    z-index: 1;
+
+    &__logo {
+        // margin-bottom: auto;
+        margin-top: 20px;
+        width: 70%;
+        border-radius: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__links {
+        margin-top: 100px;
+        margin-left: 15%;
+        list-style-type: none;
+        padding: 0;
+        font-weight: 500;
+
+        i {
+            margin-right: 25px;
+            width: 15px;
+        }
+
+        li {
+            margin-bottom: 30px;
+            color: #a9a9a9;
+
+            &:hover {
+                color: #11999e;
+                cursor: pointer;
+            }
+        }
+
+
+    }
+
+    &__copyright {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 12px;
+        color: #11999e;
+        margin-top: auto;
+    }
+}
