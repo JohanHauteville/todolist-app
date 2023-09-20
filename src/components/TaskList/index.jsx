@@ -1,15 +1,18 @@
 import TaskCard from "../TaskCard"
 import fullTask from '../../mock/tasksList.json'
 import './styles.scss'
+import { useState } from "react";
 
 function TaskList() {
     console.log("TaskList")
-    console.log(fullTask);
+    const [taskList, setTasklist] = useState(fullTask)
+    console.log(taskList);
+
 
 
     return (
         <section className="task-container">
-            {fullTask.map(task => {
+            {taskList.map(task => {
                 return <TaskCard key={task.title} task={task} />
             })}
         </section>

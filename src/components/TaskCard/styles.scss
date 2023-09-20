@@ -16,6 +16,8 @@
     &__check-button {
         margin: 0 50px;
         cursor: pointer;
+        color: #11999e;
+
     }
 
     &__info {
@@ -25,6 +27,7 @@
     &__title {
         font-size: 20px;
         margin: 0 0 5px 0;
+        color: #11999e;
 
         &--done {
             text-decoration: line-through;
@@ -34,7 +37,7 @@
 
     &__description {
         margin: 0 0 5px 0;
-
+        color: #808080;
         font-size: 16px;
     }
 
@@ -45,6 +48,9 @@
     }
 
     &__icons {
+        display: flex;
+        gap: 20px;
+        color: #11999e;
         font-size: 20px;
         cursor: pointer;
     }
