@@ -1,0 +1,51 @@
+.task-card {
+    background-color: #fff;
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.034);
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1)
+    }
+
+    &__check-button {
+        margin: 0 50px;
+        cursor: pointer;
+    }
+
+    &__info {
+        margin-right: auto;
+    }
+
+    &__title {
+        font-size: 20px;
+        margin: 0 0 5px 0;
+
+        &--done {
+            text-decoration: line-through;
+            color: #c1c1c1;
+        }
+    }
+
+    &__description {
+        margin: 0 0 5px 0;
+
+        font-size: 16px;
+    }
+
+    &__tag {
+        margin: 0;
+        font-size: 14px;
+        color: #c1c1c1;
+    }
+
+    &__icons {
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
