@@ -1,13 +1,16 @@
 import logo from '../../assets/img/logo.png'
 import './styles.scss'
-// import { Link } from "react-router-dom"
 import linkList from '../../mock/link-list.json'
+import { Link } from 'react-router-dom'
 
-//<Link to="/" className="navLink navLink--actived">Accueil</Link> 
 
 function SideBar() {
+
     return <div className='side-bar'>
-        <img className="side-bar__logo" src={logo} alt="logo Task" />
+        <Link to="/" className='side-bar__link'>
+            <img className="side-bar__logo" src={logo} alt="logo Task" />
+        </Link>
+
         <nav>
             <ul className='side-bar__links'>
                 {linkList.map((link) => {

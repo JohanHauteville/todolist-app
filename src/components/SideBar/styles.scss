@@ -6,6 +6,11 @@
     box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.078);
     z-index: 1;
 
+    &__link {
+        display: flex;
+        justify-content: center;
+    }
+
     &__logo {
         // margin-bottom: auto;
         margin-top: 20px;

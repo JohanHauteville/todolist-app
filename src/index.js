@@ -1,26 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.scss';
-import Home from './pages/home/Home';
-import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Layout from './components/Layout';
-import Error from './pages/Error';
 import { Provider } from 'react-redux';
+
+import './index.scss';
+
+import Layout from './components/Layout';
+import Home from './pages/home/Home';
+import Error from './pages/Error';
+import ModifyTask from './pages/ModifyTask';
+
+import reportWebVitals from './reportWebVitals';
 import store from './utils/store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-    <Layout>
+    {/* <Layout> */}
       <Router>
+      <Layout>
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/task/:id' element={<ModifyTask />} />
           <Route path='*' element={<Error />} />
         </Routes>
+        </Layout>
       </Router>
-    </Layout>
+    {/* </Layout> */}
     </Provider>
   </React.StrictMode>
 );
