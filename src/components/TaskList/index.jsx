@@ -1,20 +1,17 @@
 import TaskCard from "../TaskCard"
-import fullTask from '../../mock/tasksList.json'
 import './styles.scss'
-import { useState } from "react";
+import { useSelector } from "react-redux";
+
+
 
 function TaskList() {
-    console.log("TaskList")
-    const [taskList, setTasklist] = useState(fullTask)
-    console.log(taskList);
-
-
-
+    const taskList = useSelector((state) => state.task)
     return (
         <section className="task-container">
-            {taskList.map(task => {
-                return <TaskCard key={task.title} task={task} />
-            })}
+            {taskList &&
+                taskList.map(task => {
+                    return <TaskCard key={task.id + "_" + task.title} task={task} />
+                })}
         </section>
     )
 
