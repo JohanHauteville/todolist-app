@@ -11,4 +11,15 @@
     padding: 5px 10px;
     border-radius: 5px;
     align-self: flex-end;
+
+    &--dark {
+        background-color: #343944;
+        color: #16c6cc;
+        // text-shadow: 0 0 4px #2de2e8;
+
+        &:hover {
+            filter: drop-shadow(0 0 14px #2de2e8);
+
+        }
+    }
 }

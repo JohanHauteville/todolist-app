@@ -38,4 +38,36 @@ header {
         color: #515151;
 
     }
+
+}
+
+.header--dark {
+
+    i {
+        color: #16c6cc;
+        background-color: #343944;
+
+        &:hover {
+            color: #16c6cc;
+            cursor: pointer;
+            filter: drop-shadow(0 0 8px #2de2e8);
+        }
+    }
+
+    img {
+        filter: grayscale(1);
+
+        &:hover {
+
+            cursor: pointer;
+            filter: drop-shadow(0 0 8px #2de2e8);
+
+        }
+    }
+
+    p,
+    span {
+        color: #fff;
+    }
+
 }

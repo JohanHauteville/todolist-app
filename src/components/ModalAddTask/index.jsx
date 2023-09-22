@@ -2,11 +2,12 @@ import './styles.scss'
 import * as taskActions from '../../features/tasks'
 import * as modalsActions from '../../features/modals'
 
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 
 function ModalAddTask() {
 
     const dispatch = useDispatch()
+    const theme = useSelector(state => state.theme)
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -20,7 +21,7 @@ function ModalAddTask() {
 
 
     return (
-        <div className="modal-add-task-container">
+        <div className={theme === 'light' ? "modal-add-task-container" : "modal-add-task-container modal-add-task-container--dark"}>
             <div className='modal-add-task-container__form-container'>
                 <form className='modal-add-task-container__form' onSubmit={handleSubmit} >
                     <h3>Ajout d'une nouvelle tâche</h3>

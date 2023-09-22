@@ -7,11 +7,12 @@ import * as modalsActions from '../../features/modals'
 
 function AddTaskButton() {
     const dispatch = useDispatch()
+    const theme = useSelector(state => state.theme)
     const isModalOpened = useSelector((state) => state.modals.modalAddTask)
 
     return (
         <>
-            <button className='add-task-button' onClick={() => dispatch(modalsActions.toggleAdd())}>
+            <button className={theme === 'light' ? 'add-task-button' : 'add-task-button add-task-button--dark'} onClick={() => dispatch(modalsActions.toggleAdd())}>
                 + Tâche
             </button>
             {isModalOpened &&

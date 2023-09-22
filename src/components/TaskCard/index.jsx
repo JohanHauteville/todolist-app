@@ -1,7 +1,7 @@
 import './styles.scss'
 import * as taskActions from '../../features/tasks'
 import ModalDeleteTask from '../ModalDeleteTask';
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -11,9 +11,10 @@ function TaskCard({ task }) {
     const [isModalDeleteOpen, setModalOpen] = useState(false)
     const dispatch = useDispatch()
     const link = "/task/" + id
+    const theme = useSelector(state => state.theme)
 
     return (
-        <article className="task-card">
+        <article className={theme === 'light' ? "task-card" : "task-card task-card--dark"}>
             {isModalDeleteOpen &&
                 <ModalDeleteTask id={id} setModalOpen={setModalOpen} />}
             <div className="task-card__check-button" onClick={() => dispatch(taskActions.toggle(id))}>

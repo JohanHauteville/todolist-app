@@ -1,0 +1,16 @@
+.dark-mode-button {
+    border: 0;
+    background-color: #fff;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+
+    &--dark {
+        background-color: #232225;
+
+        &:hover {
+            text-shadow: 0 0 14px #fffbb1;
+        }
+    }
+
+}

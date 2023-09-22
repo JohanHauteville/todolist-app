@@ -11,6 +11,21 @@
     left: 0;
     background-color: rgba(0, 0, 0, 0.171);
 
+    &--dark {
+        .modal-add-task-container__form-container {
+            background-color: #343944;
+            color: #f8f8f8;
+        }
+
+        .modal-add-task-container__form {
+            &-input {
+                background-color: #1e2228;
+                color: #11999e;
+            }
+        }
+
+    }
+
     &__form-container {
         display: flex;
         padding: 30px;

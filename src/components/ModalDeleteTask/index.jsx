@@ -1,10 +1,10 @@
 import './styles.scss'
 import * as taskActions from '../../features/tasks'
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 function ModalDeleteTask({ id, setModalOpen }) {
-    // const { title, description, isFinished, tag, id } = task
     const dispatch = useDispatch()
+    const theme = useSelector(state => state.theme)
     function handleDelete() {
         dispatch(taskActions.deleteTask(id))
         setModalOpen(false)
@@ -12,7 +12,7 @@ function ModalDeleteTask({ id, setModalOpen }) {
 
     return (
         <div className="modal-delete-task-container">
-            <div className='modal-delete-task-container__form-container'>
+            <div className={theme === 'light' ? 'modal-delete-task-container__form-container' : 'modal-delete-task-container__form-container modal-delete-task-container__form-container--dark'} >
                 <form className='modal-delete-task-container__form'  >
                     <h3>Êtes-vous certain de vouloir supprimer cette tâche ?</h3>
                 </form>

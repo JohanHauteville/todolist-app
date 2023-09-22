@@ -10,6 +10,19 @@
     padding: 0 20px;
     overflow: hidden;
 
+    &--dark {
+        background-color: #292b32;
+
+        .task-page__form {
+            color: #fff;
+
+            &-input {
+                background-color: #1e2228;
+                color: #11999e;
+            }
+        }
+    }
+
     h2 {
         color: #11999e;
     }

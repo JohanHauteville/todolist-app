@@ -10,6 +10,10 @@
     font-size: calc(10px + 2vmin);
     color: #11999e;
 
+    &--dark {
+        background-color: #292b32;
+    }
+
     .fa-heart-crack {
         color: #11999e;
         font-size: 92px;
