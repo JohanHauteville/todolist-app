@@ -47,11 +47,16 @@
         color: #c1c1c1;
     }
 
-    &__icons {
+    &__icons,
+    .fa-pen {
         display: flex;
         gap: 20px;
         color: #11999e;
         font-size: 20px;
         cursor: pointer;
     }
+}
+
+a {
+    text-decoration: none;
 }

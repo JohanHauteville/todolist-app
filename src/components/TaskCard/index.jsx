@@ -3,12 +3,14 @@ import * as taskActions from '../../features/tasks'
 import ModalDeleteTask from '../ModalDeleteTask';
 import { useDispatch } from "react-redux";
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 
 function TaskCard({ task }) {
     const { title, description, isFinished, tag, id } = task
     const [isModalDeleteOpen, setModalOpen] = useState(false)
     const dispatch = useDispatch()
+    const link = "/task/" + id
 
     return (
         <article className="task-card">
@@ -29,7 +31,10 @@ function TaskCard({ task }) {
             </div>
             <div className="task-card__icons">
                 <i className="fa-solid fa-trash" onClick={() => setModalOpen(!isModalDeleteOpen)} ></i>
-                <i className="fa-solid fa-pen"></i>
+                <Link to={link}>
+                    <i className="fa-solid fa-pen"></i>
+
+                </Link>
             </div>
 
 

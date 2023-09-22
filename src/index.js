@@ -17,7 +17,6 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-    {/* <Layout> */}
       <Router>
       <Layout>
         <Routes>
@@ -27,7 +26,6 @@ root.render(
         </Routes>
         </Layout>
       </Router>
-    {/* </Layout> */}
     </Provider>
   </React.StrictMode>
 );
