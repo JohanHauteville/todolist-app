@@ -1,0 +1,18 @@
+.user-page {
+  background-color: #16c6cc0c;
+  min-height: 100vh;
+  height: 40vmin;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  padding: 0 20px;
+  overflow: hidden;
+
+  &--dark {
+    background-color: #292b32;
+    // background-color: #0e3638;
+
+  }
+}

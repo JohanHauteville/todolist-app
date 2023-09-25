@@ -6,13 +6,100 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   font-size: calc(10px + 2vmin);
   padding: 0 20px;
   overflow: hidden;
 
   &--dark {
     background-color: #292b32;
-    // background-color: #0e3638;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    &-label {
+      font-weight: 500;
+      color: #fff;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    &-input {
+      background-color: #292b3200;
+      border: 0px solid #a3a3a338;
+      border-bottom: 1px solid #ffffff56;
+      padding-bottom: 10px;
+      margin-bottom: 40px;
+      color: #fff;
+      font-size: 14px;
+      &-submit{
+        cursor: pointer;
+        border: 0;
+        background-color: #11999e;
+        border-radius:  5px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 700;
+        padding: 10px 20px;
+        &:hover{
+        background-color: #0a6669;
+
+        }
+      }
+
+      &:focus {
+        outline: none;
+        border-bottom: 1px solid #11999e;
+      }
+    }
+  }
+
+  &__connect {
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right bottom, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        height: 70vh;
+    max-width:80%;
+    min-width: 70%;
+    border-radius: 5px;
+    display: flex;
+    box-shadow: 0px 0px 22px 23px #00000024;
+
+    &-image {
+      min-width: 50%;
+      // background-color: #11999e;
+      background: #007991;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #78ffd6, #007991);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right bottom, #78ffd6, #007991); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+
+    &-form {
+      width: 50%;
+      color: #fff;
+      padding: 40px 30px;
+
+      &-title,
+      h2 {
+        font-weight: 200;
+        color: #7c7c7c;
+        font-size: 28px;
+        margin-bottom: 50px;
+      }
+
+      &-title {
+
+        &:hover,
+        &--actived {
+          cursor: pointer;
+          font-weight: 400;
+          color: #fff;
+        }
+      }
+    }
+
 
   }
 }
